@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
+  <meta name="theme-color" content="#14324C">
+  <meta name="description" content="Ovalis, un jeu d'aventure et de compagnons, en français, à jouer à l'horizontale.">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <title>Ovalis</title>
+  <link rel="manifest" href="./manifest.webmanifest">
+  <link rel="icon" href="./icons/icon-192.png">
+  <link rel="apple-touch-icon" href="./icons/icon-192.png">
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+  <div id="rotate" role="status">
+    <div class="phone" aria-hidden="true"></div>
+    <h1>Tourne ton téléphone</h1>
+    <p>Ovalis se joue à l'horizontale, comme une console.</p>
+  </div>
+  <div id="app" data-text="grand" data-cb="1" data-mode="title">
+    <canvas id="view"></canvas>
+    <div id="fade"></div>
+    <div id="ui"></div>
+    <div id="toast" hidden></div>
+    <div id="controls" hidden>
+      <div id="stick-zone" aria-hidden="true"></div>
+      <div id="stick" hidden><div></div></div>
+      <button type="button" id="btn-b" aria-label="Bouton B : menu ou retour">B</button>
+      <button type="button" id="btn-a" aria-label="Bouton A : confirmer">A</button>
+    </div>
+  </div>
+  <script type="module" src="./js/main.js"></script>
+</body>
+</html>
